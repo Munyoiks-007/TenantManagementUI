@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- ==================== BLACK HEADER BAR ==================== -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Tenant Management System"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <!-- ==================== TENANT INFORMATION FORM ==================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tenant Name Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenant Name"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Tenant Name Input -->
+        <EditText
+            android:id="@+id/EditTenantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tenant Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <!-- Tenant Phone Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tenant Phone Number"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Tenant Phone Input -->
+        <EditText
+            android:id="@+id/EditPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tenant Phone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <!-- ==================== RENT AND SAVE ACTION ==================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Rent Paid Input -->
+        <EditText
+            android:id="@+id/EditRentPaid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Rent Paid"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <!-- Save Details Button -->
+        <Button
+            android:id="@+id/btnSaveDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="10dp"
+            android:text="Save Details" />
+
+    </LinearLayout>
+
+    <!-- ==================== DISPLAY AREA ==================== -->
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tenant details will appear here."
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Display Info Button -->
+    <Button
+        android:id="@+id/ButtonDisplayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Display Info" />
+
+</LinearLayout>
