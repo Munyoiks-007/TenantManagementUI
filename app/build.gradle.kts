@@ -1,7 +1,6 @@
 // App refuses to run with the id plugin no sync with the app gradle too --> ran it without it first same results as per document was gotten
 plugins {
     alias(libs.plugins.android.application)
-    id("kotlin-kapt")
 
 }
 
