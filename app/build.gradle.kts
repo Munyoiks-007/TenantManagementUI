@@ -1,7 +1,9 @@
 // App refuses to run with the id plugin no sync with the app gradle too --> ran it without it first same results as per document was gotten
 plugins {
     alias(libs.plugins.android.application)
-
+// NEW: switch Safe Args on for this app.
+// It must come BELOW the android.application line
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -39,6 +41,8 @@ android {
 }
 
 dependencies {
+    implementation("androidx.navigation:navigation-fragment-ktx:2.9.8")
+    implementation("androidx.navigation:navigation-ui-ktx:2.9.8")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
