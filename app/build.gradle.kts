@@ -22,8 +22,8 @@ android {
         applicationId = "com.example.tenantmanagementsystem"
         minSdk = 24
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 1 // a number that goes up with every release
+        versionName = "1.0" // the version users see
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
